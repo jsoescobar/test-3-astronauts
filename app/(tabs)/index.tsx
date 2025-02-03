@@ -25,7 +25,6 @@ export default function AllPlanets() {
 
   return (<>
     <Filters
-      placeholder="Search planet by name"
       defaultList={planets}
       data={data}
       setData={setData}

@@ -31,7 +31,6 @@ export default function Favorites() {
 
   return (<>
     <Filters
-      placeholder="Search for favorite planet by name"
       defaultList={favoritePlanets}
       data={data}
       setData={setData}

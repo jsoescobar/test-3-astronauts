@@ -1,50 +1,46 @@
-# Welcome to your Expo app 👋
+# Solar System Planets App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This mobile application displays a list of planets in our solar system, fetched from a public REST API.  
 
-## Get started
+## Features  
+- Fetch and display planetary information from a public REST API  
+- User-friendly UI built with React Native  
+- State management and efficient data fetching  
 
-1. Install dependencies
+## Libraries Used
+- **Zustand** was chosen for its lightweight state management without unnecessary boilerplate.  
+- **@tanstack/react-query** efficiently handles API data synchronization, reducing manual fetch logic.  
+- **Axios** provides a flexible and readable API for HTTP requests.  
+- **@gluestack-ui** speeds up UI component creation with prebuilt components.  
+- **@react-native-async-storage/async-storage** ensures efficient local data persistence.
 
+## Installation  
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jsoescobar/test-3-astronauts.git
+   cd test-3-astronauts
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+## Usage  
    ```bash
-    npx expo start
+   npm run android # Start the App on Android
+   npm run ios # Start the App on iOS
+   npm run lint # Lint the Project
    ```
 
-In the output, you'll find options to open the app in a
+## Requirements  
+- Node.js v14+
+- Expo CLI
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Notes
+- Make sure to have an Android or iOS device/emulator connected and configured.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## APK for Testing on Physical Device
+The APK file (`test-on-device.apk`) is included in the code for testing on a physical device.
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.

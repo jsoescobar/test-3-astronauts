@@ -7,7 +7,6 @@ import { SortBy, sortPlanets } from "@/utilities/sortPlanets";
 import Planet from "@/types/Planet";
 
 interface FiltersProps {
-  placeholder: string;
   defaultList: Planet[];
   data: Planet[];
   setData: Dispatch<SetStateAction<Planet[]>>;
@@ -23,7 +22,7 @@ interface FiltersProps {
  *
  * @returns A component with a search input and sort button.
  */
-const Filters = ({ placeholder, defaultList, data, setData }: FiltersProps) => {
+const Filters = ({ defaultList, data, setData }: FiltersProps) => {
 
   const [sortBy, setSortBy] = useState<SortBy>('asc');
   const [searchText, setSearchText] = useState('');
@@ -51,7 +50,8 @@ const Filters = ({ placeholder, defaultList, data, setData }: FiltersProps) => {
             <InputIcon as={()=> <FontAwesome name="search" size={24} color="black" />} />
           </InputSlot>
           <InputField
-            placeholder={placeholder}
+            placeholder={"Search by name"}
+            numberOfLines={1}
             value={searchText}
             onChangeText={onSearch}
           />
